@@ -15,6 +15,9 @@ struct ContentView: View {
                 Text("Hello There! How Has Your Day Been Today?")
                     .font(.title)
                     .multilineTextAlignment(.center)
+                NavigationLink(destination: ProfileView()) {
+                    Text("Profile")
+                }
                 Spacer()
                 Button("😁") {
                     textTitle = "Good"
@@ -31,6 +34,7 @@ struct ContentView: View {
                     .font(.title2)
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
+                
             }
             .padding()
         }
